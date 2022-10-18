@@ -19,11 +19,12 @@
 #  define BUFFER_SIZE 42
 # endif
 
+/* auxiliary functions */
 char	*ft_strchr(char *s, int c);
 char	*ft_strjoin(char *s1, char *s2);
 size_t	ft_strlen(char *s);
-char	*ft_line(char *save);
-char	*ft_save(char *save);
-char	*ft_read_save(int fd, char *save);
+
+/* main function */
 char	*get_next_line(int fd);
+
 #endif

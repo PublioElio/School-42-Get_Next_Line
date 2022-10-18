@@ -1,27 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line_utils.c                              :+:      :+:    :+:   */
+/*   get_next_line_utils_bonus.h                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: adiaz-be <adiaz-be@student.42malaga.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/10 08:40:39 by adiaz-be          #+#    #+#             */
-/*   Updated: 2022/10/10 08:41:05 by adiaz-be         ###   ########.fr       */
+/*   Created: 2022/10/18 14:36:29 by adiaz-be          #+#    #+#             */
+/*   Updated: 2022/10/18 14:36:59 by adiaz-be         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "get_next_line_bonus.h"
 
 size_t	ft_strlen(char *str)
 {
-	size_t	i;
+	size_t	c;
 
-	i = 0;
+	c = 0;
 	if (!str)
 		return (0);
-	while (str[i])
-		i++;
-	return (i);
+	while (str[c])
+		c++;
+	return (c);
 }
 
 char	*ft_strchr(char *str, int c)
@@ -30,7 +30,7 @@ char	*ft_strchr(char *str, int c)
 
 	i = 0;
 	if (!str)
-		return (0);
+		return (NULL);
 	if (c == '\0')
 		return ((char *)&str[ft_strlen(str)]);
 	while (str[i])
@@ -61,9 +61,9 @@ char	*ft_strjoin(char *s1, char *s2)
 	i = -1;
 	c = 0;
 	if (s1)
-		while (s1[++i])
+		while (s1[++i] != '\0')
 			str[i] = s1[i];
-	while (s2[c])
+	while (s2[c] != '\0')
 		str[i++] = s2[c++];
 	str[ft_strlen(s1) + ft_strlen(s2)] = '\0';
 	free(s1);

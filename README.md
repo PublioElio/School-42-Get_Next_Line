@@ -1,5 +1,6 @@
 <h1 align="center">School 42 get_next_line()</h1>
-This is the repository for the School 42 Málaga cursus project __`get_next_line()`__.
+
+This is the repository for the School 42 Málaga cursus project`get_next_line()`.
 
 <h2 align="center">
 	<a href="#about">About</a>

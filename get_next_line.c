@@ -84,6 +84,7 @@ char	*ft_read_save(int fd, char *save)
 		if (num_bytes == -1)
 		{
 			free(buff);
+			free(save);
 			return (NULL);
 		}
 		buff[num_bytes] = '\0';

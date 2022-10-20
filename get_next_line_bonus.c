@@ -84,6 +84,7 @@ char	*ft_read_save(int fd, char *save)
 		if (read_bytes == -1)
 		{
 			free(buff);
+			free(save);
 			return (NULL);
 		}
 		buff[read_bytes] = '\0';
@@ -98,12 +99,8 @@ char	*get_next_line(int fd)
 	char		*line;
 	static char	*save[4096];
 
-	if (fd < 0 || BUFFER_SIZE <= 0 || fd > 4096 || read(fd, 0, 0) < 0)
-	{
-		free(save[fd]);
-		save[fd] = NULL;
+	if (fd < 0 || BUFFER_SIZE <= 0 || fd > 4096)
 		return (0);
-	}
 	save[fd] = ft_read_save(fd, save[fd]);
 	if (!save[fd])
 		return (NULL);

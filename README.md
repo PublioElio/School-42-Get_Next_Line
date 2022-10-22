@@ -19,3 +19,5 @@ This is the repository for the School 42 Málaga cursus project`get_next_line()`
 	<span> · </span>
 	<a href="#testing">Testing</a>
 </h2>
+
+The goal of this project is to create the function `get_next_line.c` which, when called in a loop, will read one line at a time in the file descriptor, until the end of the file. As estated in the subject, the program must compile with the `flag-D BUFFER_SIZE=` which will be used as the buffer size for the `read` calls in `get_next_line()`.

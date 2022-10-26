@@ -15,7 +15,7 @@ This is the repository for the School 42 Málaga cursus project`get_next_line()`
 	<span> · </span>
 	<a href="#requirements">Requirements</a>
 	<span> · </span>
-	<a href="#instructions">Instuctions</a>
+	<a href="#instructions">Instructions</a>
 	<span> · </span>
 	<a href="#testing">Testing</a>
 </h2>

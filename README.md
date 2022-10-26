@@ -21,7 +21,9 @@ This is the repository for the School 42 Málaga cursus project`get_next_line()`
 </h2>
 
 ## About
-The goal of this project is to create the function `get_next_line.c` which, when called in a loop, will read one line at a time in the file descriptor, until the end of the file. As stated in the subject, the program must compile with the `flag-D BUFFER_SIZE=` which will be used as the buffer size for the `read` calls in `get_next_line()`. You can find more details in [the subject of the project](https://github.com/PublioElio/School-42-Get_Next_Line/blob/main/get_next_line.es.subject.pdf).
+The goal of this project is to create the function `get_next_line.c` which, when called in a loop, will read one line at a time in the __file descriptor__, until the end of the file. As stated in the subject, the program must compile with the `flag-D BUFFER_SIZE=` which will be used as the buffer size for the `read` calls in `get_next_line()`. You can find more details in [the subject of the project](https://github.com/PublioElio/School-42-Get_Next_Line/blob/main/get_next_line.es.subject.pdf).
+
+This project is a introduction of __static variables__, which will be very useful for future projects. Also, as noted earlier, we'll learn how handle macros during compilation.
 
 ## Testing
 This function have been tested with [Francinette](https://github.com/xicodomingues/francinette).

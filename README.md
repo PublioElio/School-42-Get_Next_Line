@@ -2,7 +2,7 @@
   <img src="https://s4.gifyu.com/images/back_slash_green.gif" height="180"/>
   <img src="https://s4.gifyu.com/images/n_gif.gif" width="180"/>
 </div>
-
+ 
 
 <h1 align="center">School 42 get_next_line()</h1>
 
